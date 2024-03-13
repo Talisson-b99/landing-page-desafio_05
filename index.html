@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="./js/svg-inject.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODHUB</title>
+  </head>
+  <body>
+    <!-- ======= NAVBAR DESKTOP ======= -->
+    <header>
+      <div class="container navbar-desktop">
+        <div class="container-truck">
+          <img
+            src="img/svg/truck.svg"
+            onload="SVGInject(this)"
+            alt="icone de caminhão"
+          />
+        </div>
+        <img src="img/svg/logo.svg" onload="SVGInject(this)" alt="food hub" />
+        <div class="header-right">
+          <nav class="navbar">
+            <ul>
+              <li class="navbar__item active"><a href="#">Home</a></li>
+              <li class="navbar__item"><a href="#">Shop</a></li>
+              <li class="navbar__item"><a href="#">About</a></li>
+              <li class="navbar__item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="list-actions">
+            <li class="cart">
+              <img src="img/svg/bag.svg" onload="SVGInject(this)" alt="" />
+              <span class="qnt"> 1 </span>
+            </li>
+            <li class="account">
+              <img src="img/svg/user.svg" onload="SVGInject(this)" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ======= NAVBAR MOBILE ======= -->
+      <div class="navbar-mobile container">
+        <div class="container-truck">
+          <img
+            src="img/svg/truck.svg"
+            onload="SVGInject(this)"
+            alt="icone de caminhão"
+          />
+        </div>
+        <div class="logo-mobile">
+          <img src="img/svg/logo.svg" onload="SVGInject(this)" alt="food hub" />
+        </div>
+        <div class="actions-mobile">
+          <ul class="list-actions">
+            <button>
+              <li class="cart">
+                <img src="img/svg/bag.svg" onload="SVGInject(this)" alt="" />
+                <span class="qnt"> 1 </span>
+              </li>
+            </button>
+            <button>
+              <li class="account">
+                <img src="img/svg/user.svg" onload="SVGInject(this)" alt="" />
+              </li>
+            </button>
+            <button class="btn-menu">
+              <li>
+                <img src="img/svg/menu.svg" onload="SVGInject(this)" alt="" />
+              </li>
+            </button>
+          </ul>
+        </div>
+      </div>
+      <!-- ======= MENU MOBILE ======= -->
+      <div class="menu-mobile">
+        
+          <button class="btn-close">
+            <img src="img/svg/close.svg" onload="SVGInject(this)" alt="icone para fechar o menu" />
+          </button>
+        
+        <ul>
+          <li><a href="#">
+            <img class="logo" src="img/svg/logo-footer.svg" onload="SVGInject(this)" alt="" />
+          </a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ======= HERO ======= -->
+    <main>
+      <section class="container hero">
+        <div class="hero__content">
+          <h1>Best <span>food</span> for you</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, sequi?
+          </p>
+          <a href="#" class="btn-call">
+            <img
+              src="img/svg/call.svg"
+              onload="SVGInject(this)"
+              alt="icone de telefone"
+            />
+            Order now</a
+          >
+        </div>
+        <div class="hero__img">
+          <img
+            src="./img/banner.png"
+            alt="Imagem de 4 rosquinhas caindo do alto"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <!-- ======= NEWSLETTER ======= -->
+      <section class="section__new">
+        <div class="container">
+          <div class="section__new__content">
+            <h4>Join our newsletter and get 30% off your first order</h4>
+          </div>
+          <div class="section__new__input">
+            <input type="email" placeholder="enter your email..." />
+            <button>Send</button>
+          </div>
+        </div>
+      </section>
+      <!-- ======= SERVICE DELIVERY ======= -->
+      <section class="section__service">
+        <div class="container">
+          <div class="service__img">
+            <img
+              src="./img/delivery.png"
+              alt="Um home com sacola de verduras em uma mão e na outra um celular"
+            />
+          </div>
+          <div class="service__content">
+            <div class="title">
+              <h2><span>Fast</span> delivery</h2>
+              <img
+                src="img/svg/truck.svg"
+                onload="SVGInject(this)"
+                alt="icone de caminhão"
+              />
+            </div>
+            <p class="description">
+              India's fastest Food delivery service. Don't Blink. Our delivery
+              partner will be at your door in 10 minutes. Enjoy. Boom! You'll
+              never have to wait ...
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ======= CARDS ======= -->
+      <section class="cards">
+        <div class="container">
+          <ul class="cards__list">
+            <li class="item">
+              <img src="./img/prato-1.png" alt="" />
+              <h4>Starbucks</h4>
+              <span>$928.41</span>
+            </li>
+            <li class="item">
+              <img src="./img/prato-2.png" alt="" />
+              <h4>Tajikistan</h4>
+              <span>$767.50</span>
+            </li>
+            <li class="item">
+              <img src="./img/prato-3.png" alt="" />
+              <h4>Brazil</h4>
+              <span>$ 940.51</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ======= BESTSELLERS SWIPER ======= -->
+      <section class="bestsellers">
+        <div class="container">
+          <div class="swiper">
+            <h2>Bestsellers in Foods</h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/prato-4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/prato-5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/prato-6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/prato-7.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/prato-8.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/prato-9.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======= FOOTER ======= -->
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="img/svg/logo-footer.svg"
+            onload="SVGInject(this)"
+            alt="Food hub"
+          />
+        </div>
+        <div class="accordion">
+          <button class="button-accordion">
+            <h4>Food Hub</h4>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="accordion">
+          <button class="button-accordion">
+          <h4>Produtos</h4>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="#">Saladas frescas</a></li>
+            <li><a href="#">Pratos principais sem glúten</a></li>
+            <li><a href="#">Opções veganas e vegetarianas</a></li>
+          </ul>
+        </div>
+        <div class="accordion">
+          <button class="button-accordion">
+            <h4>Contato</h4>
+          </button>
+          <ul class="accordion-content">
+            <li><a href="#">+55 11 9999-9999</a></li>
+            <li><a href="#">contato@.email.com</a></li>
+            <li><a href="#">rua pdf, SP/São Paulo</a></li>
+          </ul>
+        </div class="accordion">
+        <div class="redes-sociais">
+          <h4>Siga-nos nas Redes Sociais</h4>      
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="img/svg/icon-facebook.svg"
+                  onload="SVGInject(this)"
+                  alt="icone facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/svg/icon-linkdin.svg"
+                  onload="SVGInject(this)"
+                  alt="icone linkdin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/svg/icon-twitter.svg"
+                  onload="SVGInject(this)"
+                  alt="icone twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/svg/icon-instagram.svg"
+                  onload="SVGInject(this)"
+                  alt="icone instagram"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        initialSlide: 2,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 250,
+          modifier: 1.5,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+        loopAdditionalSlides: 2,
+      });
+    </script>
+  </body>
+</html>

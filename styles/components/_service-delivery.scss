@@ -1,0 +1,49 @@
+.section__service {
+  .container {
+    @include flex(justify-between, center);
+    gap: 240px;
+    overflow: hidden;
+
+    @include responsive(s) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  .service__img {
+    width: 50%;
+
+    @include responsive(s) {
+      width: 100%;
+    }
+  }
+
+  .service__content {
+    width: 50%;
+    max-width: 540px;
+  
+    .title{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      h2 {
+        font-family: 'Rockinsoda';
+        font-size: 72px;
+        font-weight: 500;
+  
+        span {
+          color: $color-orange;
+        }
+      }
+    }
+    @include responsive(s) {
+      width: 100%;
+      .title{
+
+        h2 {
+          font-size: 48px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

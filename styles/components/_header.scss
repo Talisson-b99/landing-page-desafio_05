@@ -1,0 +1,219 @@
+// HEADER
+header {
+  position: relative;
+  .container {
+    @include flex(space-between, center);
+   padding-block: 34px;
+  z-index: 999;
+
+  @include responsive(s) {
+    padding-block: 24px;
+  }
+  }
+
+  .container-truck {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+  }
+
+
+.truck {
+  animation: move-truck 10s linear infinite;
+}
+
+@keyframes move-truck {
+0% {
+  opacity: 0.8;
+  transform: translateX(0px);
+
+}
+ 100% {
+  opacity: 1;
+  transform: translateX(1440px);
+}
+}
+  
+  .list-actions {
+    @include flex(flex-start, center);
+    margin-left: 100px;
+
+    li {
+      width: 32px;
+      height: 32px;
+      background-color: $color-orange;
+      border-radius: 50%;
+      @include flex(center,  center);
+
+      position: relative;
+
+      cursor: pointer;
+
+      &.cart {
+        margin-right: 32px;
+        @include responsive(s) {
+          margin-right: 12px;
+        }
+      }
+
+      &.account {
+        @include responsive(s) {
+          display: none;
+        }
+      }
+    }
+
+    .qnt {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1.5px solid $color-white;
+      @include flex(center,center);
+
+      position: absolute;
+      top: 45%;
+      left: 65%;
+
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-white;
+      background-color: $color-orange;
+
+      box-shadow: 0px 1px 4px rgba($color-black, 0.25);
+
+    }
+  }
+
+  .navbar-mobile {
+    display: none;
+
+    @include responsive(s) {
+      display: flex;
+    }
+  }
+}
+
+.navbar{
+  ul {
+    display: flex;
+  }
+  &__item {
+    margin-inline: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: 18px;
+      color: $color-black;
+    }
+
+    &.active a{
+      color: $color-orange;
+    }
+  }
+}
+
+.header-right {
+  display: flex
+}
+
+
+// NAVBAR MOBILE 
+  .container.navbar-desktop {
+    @include responsive(s) {
+      display: none;
+    }
+  }
+
+  .navbar-mobile .logo-mobile {
+    svg {
+      width: 96px;
+    }
+  }
+
+  // MENU MOBILE
+  .menu-mobile {
+    display: none;
+
+    @include responsive(s){
+      display: flex;
+      position: fixed;
+      top: 0px;
+      right: -100%;
+      background-color:$color-orange;
+
+      height: 100vh;
+      width: 69%;
+
+      transition: .7s ease;
+
+      &.menu-active {
+        right: 0;
+      }
+
+      // position: relative;
+      .btn-close{
+        position: absolute;
+        top: 8px;
+        left: -25px;
+        background-color: $color-orange;
+        border-radius: 50%;
+        @include flex(center, center);
+
+        svg {
+          fill: #fff
+        }
+      }
+
+      ul {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 24px;
+
+        .logo {
+          width: 72px;
+          height: 50px;
+        }
+
+        a {
+          color: $color-white;
+          font-size: 16px;
+          font-weight: 500;
+          position: relative;
+          display: block;
+          
+
+          &::after {
+            content: "";
+            width: 0px;
+            height: 2px;
+            bottom: 0px;
+            left: 0;
+            position: absolute;
+            background-color: #fff;
+            transition: all .3s ease;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }

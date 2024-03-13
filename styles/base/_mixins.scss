@@ -1,0 +1,13 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin responsive($device) {
+  @if $device == s {
+    @media screen and (max-width: 960px) {
+      @content
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import './base/mixins';
+@import './base/variables';
+@import './components/header';
+@import './components/hero';
+@import './components/newsletter';
+@import './components/service-delivery';
+@import './components/cards';
+@import './components/bestsellers';
+@import './components/footer';
+
+@font-face {
+  font-family: 'Rockinsoda';
+  src: url('../font/Rockinsoda.ttf') format('truetype');
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.border {
+  border: 1px solid red;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 72px 24px;
+  overflow: hidden;
+
+  @include responsive(s) {
+    width: 100vw;
+    padding: 48px 24px;
+    overflow: hidden;
+
+  }
+}
+
+.description {
+  font-size: 30px;
+  color: $color-darkengray;
+
+  @include responsive(s) {
+    font-size: 16px;
+  }
+}

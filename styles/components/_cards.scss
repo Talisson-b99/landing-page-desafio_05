@@ -1,0 +1,28 @@
+.cards {
+  .container {
+    @include flex(center, center);
+
+  }
+ .cards__list {
+  display: flex;
+  gap: 72px;
+
+  @include responsive(s) {
+    flex-direction: column;
+    gap: 32px
+  }
+
+  .item {
+    @include flex(center, center);
+    flex-direction: column;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 500;
+      color: $color-darkengray;
+      margin-block: 20px 4px;
+    }
+  }
+ }
+
+}
