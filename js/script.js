@@ -2,7 +2,9 @@
 document.querySelectorAll('.button-accordion').forEach((button) => {
   button.addEventListener('click', () => {
     const accordionContent = button.nextElementSibling
+    const h4Element = button.querySelector('h4')
     accordionContent.classList.toggle('active')
+    h4Element.classList.toggle('active')
 
     if(accordionContent.classList.contains('active')) {
       accordionContent.style.height = accordionContent.scrollHeight + 'px'
