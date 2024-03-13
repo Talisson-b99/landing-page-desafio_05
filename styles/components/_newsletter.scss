@@ -28,6 +28,10 @@
 
   &__input {
     position: relative;
+
+    @include responsive(s) {
+      width: 100%;
+    }
     input {
       width: 800px;
       height: 100px;
@@ -47,9 +51,12 @@
         height: 50px;
         padding: 8px 24px;
         margin-top: 24px;
+      font-size: 14px;
+
         &::placeholder {
         font-size: 14px;
-
+        line-height: 50px;
+        display: flex;
         }
       }
     }
